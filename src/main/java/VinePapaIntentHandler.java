@@ -21,10 +21,10 @@ public class VinePapaIntentHandler implements RequestHandler {
 
     public Optional<Response> handle(HandlerInput input) {
 
-        //de facut frumos
+        String text = getResponseFromServer(getDayOfWeekFrom(input));
 
         return input.getResponseBuilder().
-                withSpeech("place_holder")
+                withSpeech(text)
                 .build();
     }
 
@@ -36,7 +36,7 @@ public class VinePapaIntentHandler implements RequestHandler {
 
     private String getResponseFromServer(final String month) {
         try {
-            URL url = new URL("https://vine-papa.herokuapp.com/text/" + month);
+            URL url = new URL("https://vine-papa.herokuapp.com/text/" + month); //aici trebuie schimbat
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));

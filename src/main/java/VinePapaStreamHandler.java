@@ -11,7 +11,7 @@ public class VinePapaStreamHandler extends SkillStreamHandler {
                         new HelpIntentHandler(),
                         new LaunchRequestHandler(),
                         new SessionEndedRequestHandler())
-                .withSkillId("amzn1.ask.skill.81fe557a-bf44-4c1a-9e3e-ae35965acbe1") //aici trebuie schimbat
+                .withSkillId("amzn1.ask.skill.2e513a34-0698-4424-996c-51b4c836f806") //aici trebuie schimbat
                 .build();
     }
     public VinePapaStreamHandler() {
