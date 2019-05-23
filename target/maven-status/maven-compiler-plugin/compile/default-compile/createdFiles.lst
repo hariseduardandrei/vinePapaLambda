@@ -1,0 +1,6 @@
+SessionEndedRequestHandler.class
+CancelandStopIntentHandler.class
+VinePapaStreamHandler.class
+VinePapaIntentHandler.class
+HelpIntentHandler.class
+LaunchRequestHandler.class
